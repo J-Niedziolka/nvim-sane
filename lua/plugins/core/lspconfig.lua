@@ -77,6 +77,14 @@ return {
 				end,
 			},
 		})
+
+		require("lspconfig").clangd.setup({
+			cmd = {
+				"clangd",
+				"--offset-encoding=utf-16",
+			},
+		})
+
 		require("lspconfig").typos_lsp.setup({
 			-- Logging level of the language server. Logs appear in :LspLog. Defaults to error.
 			cmd_env = { RUST_LOG = "error" },
