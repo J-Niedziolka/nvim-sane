@@ -1,0 +1,2 @@
+todo: add support for Windows Terminal reading from system clipboard (as for now, can't really copy-paste from nvim to Windows)
+    reproduction steps: ssh windows-to-arch, tmux attach, nvim foo.txt, yank to arch clipboard, try to paste it in windows
